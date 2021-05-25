@@ -22,8 +22,6 @@ canvas.create_window(370, 200, window=entry)
 
 
 # function for downloading youtube video
-
-
 def getURL () :
     global link, yt, ys
     link = entry.get()
@@ -42,16 +40,11 @@ def downloadURL () :
     entry.delete(0, 'end')
 
 
-
-
 # buttons
 loadButton = tk.Button(text = 'Load', command = getURL, bg='green', fg='white', font=('serif', 10, 'bold'))
 downloadButton = tk.Button(text = 'Download', command = downloadURL, bg='green', fg='white', font=('serif', 10, 'bold'))
 canvas.create_window(530, 200, window = loadButton)
 canvas.create_window(400, 490, window = downloadButton)
 
-
-
-
-
+# loop script
 tk.mainloop()
